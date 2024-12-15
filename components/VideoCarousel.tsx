@@ -55,13 +55,13 @@ export default function VideoCarousel({ videos, id }: VideoCarouselProps) {
   const scrollNext = useCallback(() => {
     if (!cApi) return;
 
-    cApi.scrollNext();
+    cApi.scrollNext(true);
   }, [cApi]);
 
   const scrollPrev = useCallback(() => {
     if (!cApi) return;
 
-    cApi.scrollPrev();
+    cApi.scrollPrev(true);
   }, [cApi]);
 
   const scrollTo = useCallback(

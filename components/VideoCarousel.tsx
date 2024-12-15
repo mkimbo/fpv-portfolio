@@ -18,57 +18,10 @@ interface Video {
 
 interface VideoCarouselProps {
   videos: Video[];
+  id: string;
 }
 
-const videos = [
-  {
-    id: 1,
-    title: "Beautiful Nature",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerNature.mp4",
-  },
-  {
-    id: 2,
-    title: "Big Buck Bunny",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-  },
-  {
-    id: 3,
-    title: "Elephant Dream",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-  },
-  {
-    id: 4,
-    title: "Beautiful Nature 2",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerNature.mp4",
-  },
-  {
-    id: 5,
-    title: "Big Buck Bunny 2",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-  },
-  {
-    id: 6,
-    title: "Elephant Dream 2",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-  },
-  {
-    id: 7,
-    title: "Beautiful Nature 3",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerNature.mp4",
-  },
-  {
-    id: 8,
-    title: "Big Buck Bunny 3",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-  },
-  {
-    id: 9,
-    title: "Elephant Dream 3",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-  },
-];
-
-export default function VideoCarousel() {
+export default function VideoCarousel({ videos, id }: VideoCarouselProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentVideo, setCurrentVideo] = useState<Video | null>(null);
   const [showMore, setShowMore] = useState(false);
@@ -121,7 +74,7 @@ export default function VideoCarousel() {
   );
 
   return (
-    <div className="mb-1">
+    <div id={id} className="mb-1">
       <div className="relative">
         <Carousel setApi={setCApi} className="w-full">
           <CarouselContent>
@@ -131,7 +84,7 @@ export default function VideoCarousel() {
                   <video
                     src={video.src}
                     className="w-full h-full object-cover"
-                    poster={`https://picsum.photos/seed/${video.id}/1920/1080`}
+                    //poster={`https://picsum.photos/seed/${video.id}/1920/1080`}
                   />
                 </div>
               </CarouselItem>
@@ -180,7 +133,11 @@ export default function VideoCarousel() {
         </div>
       </div>
       {showMore && (
-        <CarouselSmall scrollTo={scrollTo} handlePlayClick={handlePlayClick} />
+        <CarouselSmall
+          videos={videos}
+          scrollTo={scrollTo}
+          handlePlayClick={handlePlayClick}
+        />
       )}
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -203,9 +160,11 @@ export default function VideoCarousel() {
 export function CarouselSmall({
   scrollTo,
   handlePlayClick,
+  videos,
 }: {
   scrollTo: (index: number) => void;
   handlePlayClick: (video: Video) => void;
+  videos: Video[];
 }) {
   const [cApi, setCApi] = useState<CarouselApi>();
 
@@ -255,7 +214,7 @@ export function CarouselSmall({
                 <video
                   src={video.src}
                   className="w-full h-full object-cover"
-                  poster={`https://picsum.photos/seed/${video.id}/1920/1080`}
+                  //poster={`https://picsum.photos/seed/${video.id}/1920/1080`}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center pointer-events-none">
                   <h2 className="text-white text-lg font-bold mb-4">

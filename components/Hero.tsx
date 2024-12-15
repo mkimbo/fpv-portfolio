@@ -15,7 +15,7 @@ function Hero() {
     }
   }, []);
   return (
-    <div className="w-full h-[500px] lg:h-[700px] pb-10">
+    <div id="hero" className="w-full h-[500px] lg:h-[700px] pb-10">
       {" "}
       <video
         autoPlay

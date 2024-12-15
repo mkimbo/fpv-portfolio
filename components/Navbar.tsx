@@ -33,7 +33,7 @@ const Navbar = () => {
             <ul className="flex flex-col text-lg gap-y-5 text-center text-gray-700 dark:text-gray-300 lg:items-center lg:flex-row lg:gap-x-5 lg:h-full lg:justify-end lg:flex-1">
               <li>
                 <Link
-                  href="#"
+                  href="#videos"
                   className="transition ease-linear hover:text-gray-900 dark:hover:text-white "
                 >
                   Videos
@@ -41,7 +41,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#portfolio"
                   className="transition ease-linear hover:text-gray-900 dark:hover:text-white"
                 >
                   Portfolio
@@ -49,7 +49,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#contact"
                   className="transition ease-linear hover:text-gray-900 dark:hover:text-white"
                 >
                   Contact

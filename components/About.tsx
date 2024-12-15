@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="w-full flex items-center py-10">
+    <div id="about" className="w-full flex items-center py-10">
       <div className="flex flex-col lg:max-w-5xl mx-auto w-full px-5 ">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-10">
           VIDEOGRAPHER

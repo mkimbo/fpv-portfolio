@@ -50,13 +50,10 @@ function InputForm() {
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
+      title: "We have received your details.",
+      description: <>We will get back to you as soon as possible.</>,
     });
+    form.reset();
   }
 
   return (
@@ -150,7 +147,7 @@ function InputForm() {
 
 function ContactForm() {
   return (
-    <div className="w-full flex items-center py-16 md:py-24">
+    <div id="contact" className="w-full flex items-center py-16 md:py-24">
       <div className="flex flex-col md:flex-row lg:max-w-5xl mx-auto w-full px-5 ">
         <div className="w-full md:w-1/2">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-10 mt-16">

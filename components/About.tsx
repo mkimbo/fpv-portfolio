@@ -1,7 +1,5 @@
 import React from "react";
 
-type Props = {};
-
 function About() {
   return (
     <div className="w-full flex items-center py-10">

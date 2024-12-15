@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 
 type Props = {};
 
-function Hero({}: Props) {
+function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
   // const [showFallback] = useState<boolean>()
 

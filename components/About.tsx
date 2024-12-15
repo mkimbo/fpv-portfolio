@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function About({}: Props) {
+function About() {
   return (
     <div className="w-full flex items-center py-10">
       <div className="flex flex-col lg:max-w-5xl mx-auto w-full px-5 ">

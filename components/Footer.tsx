@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Footer({}: Props) {
+function Footer() {
   return (
     <div className="w-full flex items-center py-4 text-sm">
       <div className="flex flex-col lg:max-w-5xl mx-auto w-full px-5 ">

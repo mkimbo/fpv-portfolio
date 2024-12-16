@@ -22,7 +22,7 @@ const videos1 = [
   {
     id: 1,
     title: "Red Seats",
-    src: "https://videos.pexels.com/video-files/7989640/7989640-uhd_2732_1440_25fps.mp4",
+    src: "https://videos.pexels.com/video-files/29725551/12779576_2560_1440_30fps.mp4",
   },
   {
     id: 2,

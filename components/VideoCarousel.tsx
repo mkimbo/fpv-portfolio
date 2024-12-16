@@ -132,6 +132,21 @@ export default function VideoCarousel({ videos, id }: VideoCarouselProps) {
           </button>
         </div>
       </div>
+      <div className="flex lg:hidden my-3 justify-center gap-2 z-10">
+        {videos.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={` w-[10px] h-[10px] rounded-[50%] ${
+              slideIndex === index ? "bg-primary" : "bg-[#333]"
+            }`}
+            onClick={() => scrollTo(index)}
+            // initial="initial"
+            // animate={currentIndex === index ? 'animate' : ''}
+            // whileHover="hover"
+            // variants={dotsVariants}
+          ></div>
+        ))}
+      </div>
       {showMore && (
         <CarouselSmall
           videos={videos}

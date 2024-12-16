@@ -16,7 +16,7 @@ const Navbar = () => {
               href="/"
               className="flex items-center gap-x-4 text-lg text-gray-700 dark:text-gray-300 font-extrabold leading-[0.5]"
             >
-              <h2>FPV DRONES</h2>
+              <h2>AMANI FPV</h2>
             </Link>
           </div>
           <div

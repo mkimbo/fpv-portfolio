@@ -17,7 +17,7 @@ const questrial = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "FPV Drones",
+  title: "Amani FPV",
   description: "Get your FPV drone services today!",
 };
 

@@ -20,14 +20,19 @@ export default function Home() {
 
 const videos1 = [
   {
+    id: 8,
+    title: "Frozen Wataa",
+    src: "https://videos.pexels.com/video-files/2360537/2360537-hd_1920_1080_25fps.mp4",
+  },
+  {
     id: 1,
     title: "Red Seats",
     src: "https://videos.pexels.com/video-files/29725551/12779576_2560_1440_30fps.mp4",
   },
   {
     id: 2,
-    title: "Smooth Dancing",
-    src: "https://videos.pexels.com/video-files/6899953/6899953-uhd_2732_1440_25fps.mp4",
+    title: "Smooth City",
+    src: "https://videos.pexels.com/video-files/19361559/19361559-uhd_2560_1440_50fps.mp4",
   },
   {
     id: 3,
@@ -44,15 +49,11 @@ const videos1 = [
     title: "Roadster 2",
     src: "https://videos.pexels.com/video-files/4440820/4440820-hd_1920_1080_25fps.mp4",
   },
-  {
-    id: 8,
-    title: "Frozen Wataa",
-    src: "https://videos.pexels.com/video-files/2360537/2360537-hd_1920_1080_25fps.mp4",
-  },
+
   {
     id: 4,
     title: "Beautiful Nature",
-    src: "https://videos.pexels.com/video-files/19535472/19535472-uhd_2560_1440_30fps.mp4",
+    src: "https://videos.pexels.com/video-files/19377041/19377041-uhd_2560_1440_30fps.mp4",
   },
   {
     id: 5,
@@ -81,7 +82,7 @@ const videos = [
   {
     id: 4,
     title: "Beautiful Nature",
-    src: "https://videos.pexels.com/video-files/19535472/19535472-uhd_2560_1440_30fps.mp4",
+    src: "https://videos.pexels.com/video-files/19377041/19377041-uhd_2560_1440_30fps.mp4",
   },
   {
     id: 5,
@@ -90,8 +91,8 @@ const videos = [
   },
   {
     id: 2,
-    title: "Smooth Dancing",
-    src: "https://videos.pexels.com/video-files/6899953/6899953-uhd_2732_1440_25fps.mp4",
+    title: "Smooth City",
+    src: "https://videos.pexels.com/video-files/19361559/19361559-uhd_2560_1440_50fps.mp4",
   },
   {
     id: 3,

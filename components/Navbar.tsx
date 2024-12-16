@@ -8,7 +8,7 @@ const Navbar = () => {
     setOpenNavbar((openNavbar) => !openNavbar);
   };
   return (
-    <header className="absolute top-0 inset-x-0 z-50 h-24 flex items-center font-raleway">
+    <header className="absolute top-0 inset-x-0 z-50 h-24 flex items-center">
       <div className=" lg:max-w-5xl mx-auto w-full px-5 sm:px-10 md:px-12 h-full ">
         <nav className="flex justify-between  h-full w-full">
           <div className="flex min-w-max items-center">
@@ -16,7 +16,7 @@ const Navbar = () => {
               href="/"
               className="flex items-center gap-x-4 text-lg text-gray-700 dark:text-gray-300 font-extrabold leading-[0.5]"
             >
-              FPV DRONES
+              <h2>FPV DRONES</h2>
             </Link>
           </div>
           <div
@@ -34,25 +34,25 @@ const Navbar = () => {
               <li>
                 <Link
                   href="#videos"
-                  className="transition ease-linear hover:text-gray-900 dark:hover:text-white "
+                  className="transition ease-linear hover:text-gray-900 dark:hover:text-white tracking-widest text-[13px]"
                 >
-                  Videos
+                  VIDEOS
                 </Link>
               </li>
               <li>
                 <Link
                   href="#portfolio"
-                  className="transition ease-linear hover:text-gray-900 dark:hover:text-white"
+                  className="transition ease-linear hover:text-gray-900 dark:hover:text-white tracking-widest text-[13px]"
                 >
-                  Portfolio
+                  PORTFOLIO
                 </Link>
               </li>
               <li>
                 <Link
                   href="#contact"
-                  className="transition ease-linear hover:text-gray-900 dark:hover:text-white"
+                  className="transition ease-linear hover:text-gray-900 dark:hover:text-white tracking-widest text-[13px]"
                 >
-                  Contact
+                  CONTACT
                 </Link>
               </li>
             </ul>

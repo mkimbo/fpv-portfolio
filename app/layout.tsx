@@ -26,6 +26,11 @@ const raleway = localFont({
   variable: "--font-raleway",
   weight: "400",
 });
+const syne = localFont({
+  src: "./fonts/Syne.ttf",
+  variable: "--font-syne",
+  weight: "800",
+});
 
 export default function RootLayout({
   children,
@@ -34,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${questrial.variable} ${raleway.variable} antialiased`}>
+      <body
+        className={`${questrial.variable} ${raleway.variable} ${syne.variable} antialiased`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

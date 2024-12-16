@@ -91,7 +91,7 @@ export default function VideoCarousel({ videos, id }: VideoCarouselProps) {
             ))}
           </CarouselContent>
         </Carousel>
-        <div className="absolute inset-0 flex flex-row items-center justify-between w-full">
+        <div className="hidden absolute inset-0 lg:flex flex-row items-center justify-between w-full">
           <ChevronLeft
             onClick={scrollPrev}
             className={`text-white w-10 h-10 ${
@@ -106,9 +106,9 @@ export default function VideoCarousel({ videos, id }: VideoCarouselProps) {
           />
         </div>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center pointer-events-none">
-          <h2 className="text-white text-2xl font-bold mb-4">
+          <h3 className="text-white text-2xl font-bold mb-4 tracking-widest">
             {getSlideTitle()}
-          </h2>
+          </h3>
           <button
             onClick={() => handlePlayClick(videos[slideIndex])}
             className="bg-white bg-opacity-20 hover:bg-opacity-30 transition-colors rounded-full p-4 pointer-events-auto"
@@ -217,9 +217,9 @@ export function CarouselSmall({
                   //poster={`https://picsum.photos/seed/${video.id}/1920/1080`}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center pointer-events-none">
-                  <h2 className="text-white text-lg font-bold mb-4">
+                  <p className="text-white text-lg font-bold mb-4 tracking-widest">
                     {video.title}
-                  </h2>
+                  </p>
                   <button
                     onClick={() => {
                       if (getSlideVideo(video.id)) {

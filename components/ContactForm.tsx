@@ -150,9 +150,9 @@ function ContactForm() {
     <div id="contact" className="w-full flex items-center py-16 md:py-24">
       <div className="flex flex-col md:flex-row lg:max-w-5xl mx-auto w-full px-5 ">
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-10 mt-16">
+          <p className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-10 mt-16 tracking-wide">
             Lets Collaborate
-          </h2>
+          </p>
           <div className="flex flex-col">
             <a
               href="mailto:jackmkimbo@gmail.com"

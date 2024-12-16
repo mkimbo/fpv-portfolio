@@ -4,7 +4,7 @@ function About() {
   return (
     <div id="about" className="w-full flex items-center py-10">
       <div className="flex flex-col lg:max-w-5xl mx-auto w-full px-5 ">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-10">
+        <h2 className="text-xl text-gray-900 dark:text-gray-100 mb-10 tracking-widest">
           VIDEOGRAPHER
         </h2>
         <p className="text-gray-700 dark:text-gray-300 mb-5 w-[80%]">

@@ -53,7 +53,11 @@ const config: Config = {
       },
       fontFamily: {
         mono: ["var(--font-geist-mono)"],
-        sans: ["var(--font-questrial)", "var(--font-raleway)"],
+        sans: [
+          "var(--font-questrial)",
+          "var(--font-raleway)",
+          "var(--font-syne)",
+        ],
       },
       borderRadius: {
         lg: "var(--radius)",
